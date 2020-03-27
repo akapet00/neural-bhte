@@ -1,2 +1,3 @@
-# 1d-bioheat-transfer
-Stochastic sensitivity analysis of bioheat transfer equation using DeepXDE library.
+## Bioheat Transfer Equation Solver and Output Uncertainty Analysis
+
+Code for the ongoing study titled: Numerical Solution and Uncertainty Quantification of Bioheat Transfer Equation Using Neural Network Approach.
