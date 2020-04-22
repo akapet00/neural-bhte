@@ -1,10 +1,9 @@
-# -*- coding: utf-8 -*-
-
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
     
 def latexconfig():
+    """Paper ready plots; standard LaTeX configuration."""
     pgf_latex = {                                       # setup matplotlib to use latex for output
         "pgf.texsystem": "pdflatex",                    # change this if using xetex or lautex
         "text.usetex": True,                            # use LaTeX to write all text
@@ -26,6 +25,15 @@ def latexconfig():
     mpl.rcParams.update(pgf_latex)
 
 def figsize(scale, nplots=1):
+    """Golden ratio between the width and height: the ratio 
+    is the same as the ratio of their sum to the width of 
+    the figure. 
+    
+    width + height    height
+    -------------- = --------
+         width        width
+    Props for the code goes to: https://github.com/maziarraissi/PINNs/blob/master/Utilities/plotting.py
+    """
     fig_width_pt = 390.0                               # Get this from LaTeX using \the\textwidth
     inches_per_pt = 1.0/72.27                          # Convert pt to inch
     golden_mean = (np.sqrt(5.0)-1.0)/2.0               # Aesthetic ratio (you could change this)
