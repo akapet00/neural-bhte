@@ -1,3 +1,3 @@
-## Bioheat Transfer Equation Solver and Output Uncertainty Analysis
+# 1d-bioheat-transfer
 
-Code for the ongoing study titled: Numerical Solution and Uncertainty Quantification of Bioheat Transfer Equation Using Neural Network Approach.
+Code for graduate course in The Interaction of the Electromagnetic Field and Human Body.
